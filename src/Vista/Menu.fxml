@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.menuSocios">
+   <children>
+      <Button layoutX="224.0" layoutY="144.0" mnemonicParsing="false" onAction="#vehiculoIngresados" prefHeight="25.0" prefWidth="152.0" text="Vehiculos ingresados" />
+      <Button layoutX="224.0" layoutY="200.0" mnemonicParsing="false" onAction="#parqueoDisponible" prefHeight="25.0" prefWidth="152.0" text="Parqueo disponible" />
+   </children>
+</Pane>

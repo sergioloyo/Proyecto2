@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.VehiculoIngresadoControlador">
+   <children>
+      <Label layoutX="177.0" layoutY="80.0" text="Vehiculos ingresados">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextArea fx:id="ingresoCarro" layoutX="131.0" layoutY="200.0" prefHeight="40.0" prefWidth="274.0" />
+      <Label layoutX="131.0" layoutY="168.0" text="Carro" />
+      <Label layoutX="227.0" layoutY="168.0" text="Motocicleta" />
+      <Label layoutX="344.0" layoutY="168.0" text="Camion" />
+      <Label text="Label" />
+      <Button fx:id="conectarIngresado" layoutX="219.0" layoutY="316.0" mnemonicParsing="false" text="Conectar cliente" />
+   </children>
+</Pane>
