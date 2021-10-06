@@ -1,9 +1,13 @@
-package proyecto1;
+package utils;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
+import proyecto1.Camion;
+import proyecto1.Carro;
+import proyecto1.Moto;
+import proyecto1.Vehiculo;
 
 import javax.swing.*;
 import java.io.BufferedReader;
@@ -48,7 +52,7 @@ public class Prueba {
     /**Este es un submenu general con todas opciones del programa*/
     public void menuGeneral() {
         do {
-            opcion = Integer.parseInt(JOptionPane.showInputDialog("Menu \n\n 1. Ingreso de veciculo\n 2. Egreso de vehiculo\n 3. Validar ocupación de parqueos\n 4. Salir\n\nIngrese su opcion"));
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Menu \n\n 1. Ingreso de veciculo\n 2. Egreso de vehiculo\n 3. Validar ocupación de parqueos\n 4. Conexion servidor\n 5. Salir\n\nIngrese su opcion"));
             switch (opcion) {
                 case 1:
                     menuIngreso();
@@ -68,10 +72,17 @@ public class Prueba {
                     }
                 }
                 break;
-                case 4:
+                case 5:
                     JOptionPane.showMessageDialog(null, "Gracias por usar nuestro parqueo");
                     System.exit(0);
                     break;
+                case 4:
+                    try{
+                        starServer();
+                    }catch(Exception e){
+                        System.out.println("error:"+e.getMessage());
+                    }
+                break;
                 default:
                     JOptionPane.showMessageDialog(null, "Ingrese un valor de 1 a 3");
                     break;
@@ -409,7 +420,7 @@ public class Prueba {
 
     }//Salida Camion
 
-    
+
 
     int disCarro=10-contadorCarro;
     int disMoto=15-contadorMoto;
