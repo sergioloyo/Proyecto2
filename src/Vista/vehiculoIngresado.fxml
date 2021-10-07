@@ -4,17 +4,18 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.VehiculoIngresadoControlador">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.VehiculoIngresadoControlador">
    <children>
-      <Label layoutX="177.0" layoutY="80.0" text="Vehiculos ingresados">
+      <Label layoutX="177.0" layoutY="80.0" text="Inventarios de vehiculos">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <TextField fx:id="ingresoCarro" layoutX="133.0" layoutY="224.0" prefHeight="40.0" prefWidth="274.0" />
+      <TextField fx:id="ingresoCarro" layoutX="132.0" layoutY="196.0" prefHeight="73.0" prefWidth="278.0" />
       <Label layoutX="131.0" layoutY="168.0" text="Carro" />
       <Label layoutX="227.0" layoutY="168.0" text="Motocicleta" />
       <Label layoutX="344.0" layoutY="168.0" text="Camion" />
-      <Label text="Label" />
       <Button fx:id="conectarIngresado" layoutX="219.0" layoutY="316.0" mnemonicParsing="false" onAction="#conectarDisponible" text="Conectar cliente" />
+      <Label layoutX="40.0" layoutY="196.0" text="Ocupados" />
+      <Label layoutX="39.0" layoutY="252.0" text="Disponible" />
    </children>
-</Pane>
+</AnchorPane>

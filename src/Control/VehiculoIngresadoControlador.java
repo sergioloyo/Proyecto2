@@ -28,8 +28,9 @@ public class VehiculoIngresadoControlador implements Initializable {
     public static ServerSocket ss; // servidor
     public static Socket cs; //cliente
     public static String mensajeServidor;
-    DataInputStream in;
+    public static DataOutputStream salidaCliente;
 
+    @FXML
     public void conectarDisponible (ActionEvent actionEvent){
 
         try{
@@ -41,8 +42,9 @@ public class VehiculoIngresadoControlador implements Initializable {
             BufferedReader entrada = new BufferedReader(
                             new InputStreamReader(cs.getInputStream()));
             while ((mensajeServidor=entrada.readLine())!= null){
-
-
+                salidaCliente = new DataOutputStream(cs.getOutputStream());
+                salidaCliente.writeUTF("Total Ingresado: " + mensajeServidor + "\n");
+                
                 ingresoCarro.appendText(mensajeServidor);
 
 

@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Proyecto2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Proyecto2_jar</output-path>
+    <root id="archive" name="Proyecto2.jar">
+      <element id="module-output" name="Proyecto2" />
+      <element id="library" level="project" name="FX" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/io-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/hyph-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/pdfa-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/sign-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/forms-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/kernel-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/layout-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/pdftest-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/barcodes-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/font-asian-7.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Librerias/7.0.7/slf4j-simple-1.7.25.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -436,7 +436,8 @@ public class Prueba {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             br.readLine();
             salidaServidor = new DataOutputStream(cs.getOutputStream());
-            salidaServidor.writeUTF("  "+contadorCarro+"  "+contadorMoto+"  "+contadorCamion);
+            salidaServidor.writeUTF("  "+contadorCarro+"  "+contadorMoto+"  "+contadorCamion+"\n"+disCarro+"  "+disMoto+"  "+disCamion);
+
             System.out.println("Informacion enviada!");
 
 
